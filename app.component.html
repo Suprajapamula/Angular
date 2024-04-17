@@ -1,0 +1,11 @@
+<div [ngStyle]="mainContainer">
+    <div [ngStyle]="internalContainer">
+        <h3>COUNTER APPLICATION</h3>
+        <h1 [ngClass]="selected.color">{{count}}</h1>
+        <div>
+            <button (click)="dec()" class="btn btn-danger">Decrement</button>
+            <button class="mx-3" (click)="reset()" class="btn btn-info mx-3">Reset</button>
+            <button (click)="inc()" class="btn btn-success">Increment</button>
+        </div>
+    </div>
+</div>
